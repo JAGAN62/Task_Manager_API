@@ -33,6 +33,22 @@ This project allows users to register, log in securely using JWT, and manage the
 # Install dependencies
 pip install -r requirements.txt
 
+# Data base schema
+User ->
+id
+username
+email
+password
+
+Task ->
+id
+title
+description
+status
+owner (ForeignKey -> User)
+created_at
+updated_at
+
 # Apply database migrations
 python manage.py makemigrations
 python manage.py migrate
