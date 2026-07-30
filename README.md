@@ -80,6 +80,13 @@ Authorization: Bearer <your_access_token>
 ## Database
 The project uses **SQLite** as the database for development.
 
+## Assumptions and Design Decisions
+- The project uses SQLite for simplicity and easy setup.
+- JWT Authentication is used to secure protected endpoints.
+- Each user can access and manage only their own tasks.
+- Django REST Framework serializers are used for input validation.
+- Proper HTTP status codes are returned for success and error responses.
+
 #Author
 **Mamanduru Jagan**
 GitHub: https://github.com/JAGAN62
