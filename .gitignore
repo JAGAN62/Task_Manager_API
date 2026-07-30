@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Database
+db.sqlite3
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Python Distribution
+build/
+dist/
+*.egg-info/
+
+# Static files
+staticfiles/
+media/
+
+# Pytest
+.pytest_cache/
+
+# Migrations (Optional)
+# */migrations/*
+# !*/migrations/__init__.py
