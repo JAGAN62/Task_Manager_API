@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'rest_framework',                     # add
     'rest_framework_simplejwt',           # add
-    'drf_yasg',                           # add (for swagger docs)
     'tasks',  
 ]
 
