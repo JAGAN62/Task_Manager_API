@@ -30,7 +30,6 @@ This project allows users to register, log in securely using JWT, and manage the
 # Activate the virtual environment
 .venv\Scripts\activate
 
-
 # Install dependencies
 pip install -r requirements.txt
 
@@ -38,31 +37,31 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 
-# Create a superuser (optional)
+# Create a superuser
 python manage.py createsuperuser
 
 # Start the server
 python manage.py runserver
 
-Server URL:
+# Server URL:
 http://127.0.0.1:8000/
 
-## Authentication
+# Authentication
 This project uses **JWT Authentication**.
 Include the access token in the request header:
 
 Authorization: Bearer <your_access_token>
 
-## API Endpoints
+## API Endpoints User
 `/api/register/` | Register a new user 
 `/api/login/` | Login and receive JWT token
 
 # Tasks
-| GET | `/api/tasks/` | Retrieve all tasks |
-| POST | `/api/tasks/create/` | Create a new task |
-| GET | `/api/tasks/detail/<id>/` | Retrieve a specific task |
-| PUT | `/api/tasks/update/<id>/` | Update a task |
-| DELETE | `/api/tasks/delete/<id>/` | Delete a task |
+`/api/tasks/` | Retrieve all tasks |
+`/api/tasks/create/` | Create a new task |
+`/api/tasks/detail/<id>/` | Retrieve a specific task |
+`/api/tasks/update/<id>/` | Update a task |
+`/api/tasks/delete/<id>/` | Delete a task |
 
 ## Sample Register Request
 {
@@ -72,7 +71,6 @@ Authorization: Bearer <your_access_token>
 }
 
 ## Sample Create Task Request
-
 {
     "title": "Complete Django Assignment",
     "description": "Finish the technical assessment",
